@@ -1,1 +1,175 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+html{
+  font-size: 62.5%;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #F7F7F9;
+  background-image: url("./images/Group.png");
+  background-repeat: no-repeat;
+  background-position: right;
+ background-size: contain;
+ 
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+ul{
+  list-style: none;
+}
+/* general styles */
+.btn{
+  display: inline-block;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn-nav{
+  margin-left: 20px;
+  font-size: 1.4rem;
+  border: 1px solid #0061FE;
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+  display: inline-block;
+  color: #0061FE;
+  font-weight: 500;
+}
+ .btn-secondaary:link{
+  display:inline-block;
+  color: #fff;
+  border: none;
+  background-color: #0061FE;
+ padding: 1.3rem 3rem; 
+  border-radius: 3rem;
+  font-size: 1.5rem;
+  background: #0061FE;
+  margin: 1rem 0;
+  
+}
+
+
+/* navbar */
+.nav-bar{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  padding: 3rem 10rem;
+}
+.main-nav{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  
+}
+.item-link{
+  margin: 0 1rem;
+  font-size: 1.5rem;
+}
+/* hero section */
+.container-text{
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+.header{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  
+}
+.content{
+ 
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  padding: 3rem 10rem;
+}
+/* .picture-behind{
+  background-image: url("./images/Rectangle\ 2.png");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+} */
+.container-img{
+
+}
+.hiro-img{
+  width: 100%;
+  position: absolute;
+  top: -100px;
+  left: 50%;
+
+  width: 45%;
+  
+}
+.hiro-text{
+  color:#1E255E;
+  font-size: 4.4rem;
+  max-width: 500px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+/* span */
+.other-color{
+ color:#0061FE;;
+}
+.hiro-lead{
+  font-size: 1.6rem;
+  color: rgba(30, 37, 94, 0.7);
+   max-width: 390px; 
+  margin: 4rem 0;
+}
+.button-container{
+  /* box-shadow: 0px 4px 4px 0px #00000040;
+  opacity: 0.2; */
+  background: #c7e1f8;
+
+ 
+  opacity: 1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   width: 100%; 
+  border-radius: 3rem;
+  padding: 0 1rem; 
+  display: flex;
+   justify-content: space-between; 
+  align-items: center;
+}
+input{
+ 
+  text-align: left;
+
+  border: hidden;
+  font-family: inherit;
+   width:250px;
+  padding: 1rem;
+  border: none;
+ background-color:transparent;
+  resize: none;
+  outline: none;
+  margin: 0 12px;
+
+
+
+  
+}
+input::placeholder{
+  color: rgba(30, 37, 94, 0.7);
+
+}
+.email-box{
+  color: #fff;
+  color: rgba(30, 37, 94, 0.7);
+  border-radius: 13px;
+}
+input:focus{
+  border: none;
+  outline: none;
+  box-shadow: none;
+  
+}
