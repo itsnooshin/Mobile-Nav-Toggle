@@ -1,0 +1,82 @@
+:root{
+   --color-main-background : #181719: 
+}
+html{
+  font-size: 62.5%;
+  /* 10rem 9 rem 8 rem 7 rem  */
+}
+body{
+  background-color: #181719;
+  line-height: 1;
+  
+}
+ul  , li{
+  list-style: none;
+}
+a{
+   color: black;
+  text-decoration: none;
+}
+/* main style */
+.title-logo{
+  border: 1px solid #ffff;
+  font-family: 'Crimson Pro';
+  color: #ffff;
+  font-weight: 200;
+  font-size: 1.7rem;
+}
+.header{
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin: 2.5rem 2.5rem;
+  
+}
+.btn-close{
+  display: none;
+}
+.btn-open{
+  display: block;
+}
+
+.main-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-list .link-list{
+  color: #fff;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  margin-left: 2rem;
+  font-size: 1.8rem;
+  /* display: none; */
+}
+.main-list{
+  display: none;
+}
+.link-list.bold{
+  font-size: 700;
+  display: block;
+  /* background-color: red; */
+}
+/* button */
+.btn{
+  color: #fff;
+}
+
+
+
+@media(min-width :900px){
+  body{
+    /* background-color: red; */
+  }
+
+  .main-list{
+    display: flex;
+  }
+  .btn-open{
+    display: none;
+  }
+
+}
