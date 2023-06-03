@@ -99,10 +99,11 @@ a{
   font-family: 'Lora';
 }
 .lead-main{
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   max-width: 300px;
   line-height: 1.3;
   font-weight: 400;
+  font-family: 'Montserrat';
 }
  .btn-primary{
   border: none;
@@ -209,6 +210,41 @@ a{
   }
   .open{
     display: none;
+  }
+
+  .main-section-flex{
+    display: grid;
+     grid-template-columns: 1fr 1fr;
+     align-items: center;
+
+  
+  }
+  .main-img{
+    background-image: url("./images/main-pic.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    position: relative;
+  }
+  .main-avator{
+    width: 55%;
+  }
+  .header{
+    padding: 2rem 5rem 1rem 5rem;
+  }
+ 
+  .main-list li {
+    margin-left: 7rem;
+  }
+  .main{
+    padding: 1rem 5rem 1rem 5rem;
+  }
+  .main-avator{
+    left: 42%;
+    width: 49%;
+    bottom: -10%;
+
   }
 
 }
