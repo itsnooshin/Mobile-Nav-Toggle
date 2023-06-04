@@ -31,17 +31,29 @@ a{
   align-content: center;
   justify-content: space-between;
   /* margin: 2.5rem 2.5rem; */
+  max-width: 1300px;
+    margin: 0 auto;
 
   padding: 1rem 1rem 0rem 1rem;
+  position: relative;
 }
-.btn-close{
+.close{
+  /* display: flex; */
+  /* background-color: red; */
+  /* display: flex;
+  flex-direction: column; */
+  /* align-items: center;
+  justify-content: center; */
+  /* display: block; */
+ 
+}
+.hidden{
   display: none;
 }
 .btn-open{
   display: block;
 }
 .open{
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,6 +68,7 @@ a{
   border-radius: 30px;
   text-align: center;
   font-size: 100px;
+ 
 }
 .btn-open:not(:last-child){
    margin-bottom: 5px;
@@ -197,13 +210,123 @@ a{
 .section-picture{
   margin-bottom: 13rem;
 }
+.main-section-flex{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.open-container{
+  background-color: red;
+ 
+}
+.close{ 
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 12px;
+  right: 0px;
+  bottom: 0;
+  transform: translate(-50% , 50%);
+  cursor: pointer; 
+  z-index: 10000;
+  
+}
+
+.close::before , .close::after{
+  position: absolute;
+  content: '';
+  height: 30px;
+  width: 3px;
+  background-color:white;
+  text-align: center;
+  cursor: pointer;
+  z-index: 10000000;
+  
+ 
+}
+.close::before{
+  transform: rotate(45deg);
+  
+}
+.close::after{
+  transform: rotate(-45deg);
+  
+}
+.hidden-list{
+  display: none;
+}
+
+/* open va hidden */
+.hidden{
+  display: none;
+}
+.menub{
+  background-color: transparent;
+  border: none;
+}
+
+.close.hidden{
+  display: flex;
+}
+
+.hidden-list{
+  background-color: #181719;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  display: none;
+  transition: 0.9s ease-in;
+ 
+}
+.hidden-list .link-list{
+  color: white;
+  font-size: 2rem;
+  font-family: 'Montserrat';
+}
+.hidden-list.hidden{
+  display: flex;
+ 
+}
 
 
 
-@media(min-width :900px){
-  body{
-    /* background-color: red; */
+
+
+
+
+
+
+@media (min-width :600px) {
+  html{
+    font-size:56.25% ;
+    /* 10rem 9 rem 8 rem 7 rem  */
   }
+  .lead-main{
+    max-width: 600px;
+  }
+  .information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+
+
+
+@media(min-width :900px){   
 
   .main-list{
     display: flex;
@@ -246,5 +369,17 @@ a{
     bottom: -10%;
 
   }
+  .information{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center; 
+    text-align: left;
+  }
 
+  .menub{
+  
+    display: none;
+  }
+   
 }
