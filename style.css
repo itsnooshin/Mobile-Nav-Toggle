@@ -286,12 +286,6 @@ a{
    font-weight: 700;
 }
 
-
-
-
-
-
-
 @media (min-width :600px) {
   html{
     font-size:56.25% ;
@@ -312,8 +306,11 @@ a{
 
 
 
-@media(min-width :900px){   
-
+@media(min-width :900px){  
+   /*  font size  */
+   html{
+    font-size:  ;
+   }
   .main-list{
     display: flex;
   }
@@ -367,11 +364,18 @@ a{
     display: none;
   }
   .main-list .link-list.bold{
-     
-    
     font-weight: 700;
   }
-  
+  .lead-main{
+    font-size:2.6rem ;
+    max-width: 400px;
+  }
+  .title-main{
+    font-size: 4rem;
+  }
+  .btn-primary{
+    font-size: 1.9rem;
+  }
   
    
 }
