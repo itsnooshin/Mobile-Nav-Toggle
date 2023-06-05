@@ -286,6 +286,27 @@ a{
    font-weight: 700;
 }
 
+
+
+
+.hidden-list .link-list.bold{
+  font-weight: 700;
+  position: relative;
+
+}
+.hidden-list .link-list.bold::after{
+  content: '';
+   width: 60px;
+   /* height: 50px; */
+   border: 1px solid #fff;
+   position: absolute;
+   /* bottom: -2rem; */
+   left: 0;
+   top: 3rem;  
+}
+
+
+
 @media (min-width :600px) {
   html{
     font-size:56.25% ;
@@ -365,6 +386,18 @@ a{
   }
   .main-list .link-list.bold{
     font-weight: 700;
+    position: relative;
+ 
+  }
+  .main-list .link-list.bold::after{
+    content: '';
+     width: 50px;
+     /* height: 50px; */
+     border: 1px solid #fff;
+     position: absolute;
+     /* bottom: -2rem; */
+     left: 0;
+     top: 3rem;  
   }
   .lead-main{
     font-size:2.6rem ;
