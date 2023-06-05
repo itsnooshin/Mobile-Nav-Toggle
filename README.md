@@ -16,7 +16,7 @@
 
 ## Demo
 
-You can see a live demo of the project [here](https://example.com).
+You can see a live demo of the project [here](https://mobile-nav-toggle.vercel.app/).
 
 
 ## Technologies Used
